@@ -30,7 +30,7 @@
 <div>
 	<header class="headerB">
 		<h1>
-			<span class="flag"><img src="/img/iflag.jpg" width="70"
+			<span class="flag"><img src="/img/iflag.png" width="70"
 				height="60"></span>Italy C<span><img src="/img/Corona.png"
 				width="30" height="25"></span>VID-19 Statistic
 		</h1>

@@ -22,26 +22,27 @@
 <body class="body"><header class="headerB">
 <div>
 		<h1>
-			<span class="flag"><img src="/img/iflag.jpg" width="70"
+			<span class="flag"><img src="/img/iflag.png" width="70"
 				height="60"></span>Italy C<span><img src="/img/Corona.png"
 				width="30" height="25"></span>VID-19 Statistic
 		</h1>
 		</div>
 	</header>
+	<h2 style="text-align: center;">RegionalData</h2>
 	<div class="notification2">
 		<h4>Back to National</h4>
 		<a href="http://localhost:8080/"><img style="height: 50px"
 			alt="Go to regional" src="/img/back.jpg"></a>
 	</div>
 <div>
-	<form:form method="post" action="/" class="form">
-		<label for="city" class="color" >Select City</label> 
-		<select id="city" name="city" required>
-			<c:forEach items="${regional}" var="item" varStatus="i">
+	<form:form method="post" action="/reload" modelAttribute="theCity">
+		<form:select id="city" path="cityID">
+			<c:forEach items="${regional}" var="item">
 				<option value="${item.rcode}">${item.rname}</option>	
 			</c:forEach>
 
-		</select> <input type="submit" id="button">
+		</form:select> 
+		<input type="submit" id="button" value="View INFO">
 	</form:form>
 </div>
 

@@ -37,4 +37,8 @@ public class Covid19Service {
 	public List<AgeGeneralModel> pullAgeData() {
 		return ageRepo.findAll();
 	}
+	
+	public RegionalModel findRerionData(int cityID) {
+		return regionalRepo.getOne(cityID);
+	}
 }
